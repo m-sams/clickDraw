@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: linear-gradient(270deg, #3f5efb, #fc466b);
+  background-size: 400% 400%;
+  -webkit-animation: bgGradient 8s ease infinite;
+  -moz-animation: bgGradient 8s ease infinite;
+  animation: bgGradient 8s ease infinite;
+}
+/*Nerdy Animation Stuff. Avert thine eyes.*/
+/*Code from: https://www.gradient-animator.com/ */
+@-webkit-keyframes bgGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes bgGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes bgGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+#intro{
+  padding-bottom: 15px;
+}
+#intro h2{
+  font-family: 'Major Mono Display', monospace;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+#intro p{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  text-align: center;
+  padding-bottom: 15px;
+}
+#sliders-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+}
+#sliders-buttons p,h3{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: white;
+}
+#buttons p{
+  font-family: 'Montserrat', sans-serif;
+  color: #3D405B;
+}
+button{
+  background-color: #F4F1DE;
+  border-radius: 12px;
+}
+#left{
+  padding-right: 20px;
+}
+#right{
+  padding-left: 20px;
+}
+canvas {
+  display: block;
+}

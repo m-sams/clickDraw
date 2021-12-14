@@ -1,0 +1,51 @@
+<!DOCTYPE html><html lang="en"><head>
+    <script src="p5.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+  </head>
+  
+  <body>
+    <header>
+      <section id="intro">
+        <h2 id="title"> Click &amp; Draw v2.0 </h2>
+        <p> Welcome to Click &amp; Draw v2.0. Click anywhere on the canvas to draw a shape. </p> 
+      </section>
+      
+      <section id="sliders-buttons">
+<!--Slider & Button Wrappers allow for better styling options-->    
+        <div id="left">
+          <div id="color-sliders">
+            <h3> Change the color of the canvas using these RGB sliders! </h3>
+            <p> Red: <input type="range" id="red-value" min="1" max="255" value="50"> </p>
+            <p> Green: <input type="range" id="green-value" min="1" max="255" value="50"> </p>
+            <p> Blue: <input type="range" id="blue-value" min="1" max="100" value="50"> </p>
+
+            <h3> Change the color of the shapes using these RGB sliders! </h3>
+            <p> Red: <input type="range" id="red-value-2" min="1" max="255" value="70"> </p>
+            <p> Green: <input type="range" id="green-value-2" min="1" max="255" value="100"> </p>
+            <p> Blue: <input type="range" id="blue-value-2" min="1" max="100" value="95"> </p>
+          </div>
+          
+          <div id="sliders">
+            <p> Change the thickness of the brush: <input type="range" id="weightSlider" min="1" max="100" value="1"> </p>
+          </div>
+        </div>
+         
+        <div id="right">
+          <div id="buttons">
+            <button id="changeShapeButton"><p>Change the Shape</p></button>
+            <button id="saveDrawing"><p> Save Your Drawing</p></button>
+         </div>
+       </div>
+        
+      </section>
+    </header>
+   <script src="sketch.js"></script>
+   <script src="brushOne.js"></script>
+   <script src="brushTwo.js"></script>
+   <script src="brushThree.js"></script>
+   <script src="brushFour.js"></script>
+  
+
+</body></html>
